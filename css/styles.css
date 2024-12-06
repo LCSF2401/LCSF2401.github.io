@@ -337,6 +337,19 @@ figure img{
     font-size: 1.2rem;
 }
 
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 #contact{
     text-align: center;
 }
@@ -768,6 +781,10 @@ audio, video {
     #container{
         width: 1920px;
         margin: 0 auto;
+    }
+
+    .audio-video-container {
+        max-width: 960px;
     }
 
     table{
