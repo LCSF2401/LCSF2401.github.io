@@ -8,18 +8,35 @@ C# : C0945827
         <title>AFK: Media</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
 
         <div id="container">
 
+            <nav class="mobile-nav">
+                <div id="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="specials.html">Specials</a>
+                    <a href="training.html">Training</a>
+                    <a href="media.html">Media</a>
+                    <a href="faqs.html">FAQs</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div>
+                </a>
+            </nav>
+
             <!--Use the header area for website name or logo-->
-            <header>
+            <header id="afk-logo">
                 <a href="index.html"><img src="images/company-logo.png" alt="AFK Air Fryers logo"></a>
             </header>
 
             <!--Use the nav area to add hyperlinks to other pages within the website-->
-            <nav>
+            <nav class="tablet-desktop">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -35,6 +52,27 @@ C# : C0945827
             <!--Use the main area to add main content of the webpage-->
             <main>
                 
+                <!-- Video Section -->
+                <section class="audio-video-container">
+                    <h2>Watch Our Video</h2>
+                    <p class="description">Watch our latest product introduction.</p>
+                    <video controls>
+                        <source src="media/sample-video.mp4" type="video/mp4">
+                        <track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
+                        Your browser does not support the video element.
+                    </video>
+                </section>
+
+                <!-- Audio Section -->
+                <section class="audio-video-container">
+                    <h2>Enjoy Our Audio</h2>
+                    <p class="description">Listen to this amazing audio clip from our team.</p>
+                    <audio controls>
+                        <source src="media/sample-audio.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </section>
+
             </main>
 
             <!--Use the footer area to add webpage footer content-->
@@ -44,5 +82,8 @@ C# : C0945827
 
         </div>
 
+        <script src="scripts/script.js"></script>
+
     </body>
+
 </html>

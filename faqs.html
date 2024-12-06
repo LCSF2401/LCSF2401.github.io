@@ -8,18 +8,35 @@ C# : C0945827
         <title>AFK: FAQs</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
 
         <div id="container">
 
+            <nav class="mobile-nav">
+                <div id="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="specials.html">Specials</a>
+                    <a href="training.html">Training</a>
+                    <a href="media.html">Media</a>
+                    <a href="faqs.html">FAQs</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div>
+                </a>
+            </nav>
+
             <!--Use the header area for website name or logo-->
-            <header>
+            <header id="afk-logo">
                 <a href="index.html"><img src="images/company-logo.png" alt="AFK Air Fryers logo"></a>
             </header>
 
             <!--Use the nav area to add hyperlinks to other pages within the website-->
-            <nav>
+            <nav class="tablet-desktop">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -34,6 +51,54 @@ C# : C0945827
 
             <!--Use the main area to add main content of the webpage-->
             <main>
+
+                <section class="faq-section">
+                    <h2>General Questions</h2>
+                    <div class="faq">
+                        <h3>What is an air fryer, and how does it work?</h3>
+                        <p>An air fryer is a kitchen appliance that cooks food by circulating hot air around it, resulting in crispy and delicious meals with less oil than traditional frying methods.</p>
+                    </div>
+                    <div class="faq">
+                        <h3>Are AFK air fryers safe to use?</h3>
+                        <p>Yes, all our air fryers meet rigorous safety standards and are equipped with features such as auto shut-off and cool-touch handles for safe operation.</p>
+                    </div>
+                </section>
+        
+                <section class="faq-section">
+                    <h2>Usage and Maintenance</h2>
+                    <div class="faq">
+                        <h3>How do I clean my air fryer?</h3>
+                        <p>Cleaning your air fryer is simple. Remove the basket and pan, wash them with warm, soapy water, and wipe down the interior with a damp cloth.</p>
+                    </div>
+                    <div class="faq">
+                        <h3>Can I cook frozen food in an air fryer?</h3>
+                        <p>Yes! Air fryers are perfect for cooking frozen foods like fries, chicken nuggets, and fish sticks. They cook quickly and evenly without the need for defrosting.</p>
+                    </div>
+                </section>
+        
+                <section class="faq-section">
+                    <h2>Product Features</h2>
+                    <div class="faq">
+                        <h3>What is the capacity of AFK air fryers?</h3>
+                        <p>Our air fryers come in various sizes, ranging from 4.5 quarts for small families to 8 quarts for larger households.</p>
+                    </div>
+                    <div class="faq">
+                        <h3>Do AFK air fryers have a warranty?</h3>
+                        <p>Yes, all our air fryers come with a one-year warranty. Extended warranties are also available for purchase.</p>
+                    </div>
+                </section>
+        
+                <section class="faq-section">
+                    <h2>Troubleshooting</h2>
+                    <div class="faq">
+                        <h3>Why is my air fryer not turning on?</h3>
+                        <p>Ensure that the power cord is securely plugged in, and the basket is properly inserted. If the issue persists, contact our customer support team.</p>
+                    </div>
+                    <div class="faq">
+                        <h3>What should I do if my air fryer smokes during cooking?</h3>
+                        <p>This can happen if there is excess oil or food debris in the basket. Clean the basket and pan thoroughly before cooking.</p>
+                    </div>
+                </section>
                 
             </main>
 
@@ -44,5 +109,8 @@ C# : C0945827
 
         </div>
 
+        <script src="scripts/script.js"></script>
+
     </body>
+
 </html>

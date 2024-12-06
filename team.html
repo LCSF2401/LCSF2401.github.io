@@ -7,19 +7,36 @@ C# : C0945827
     <head>
         <title>AFK: Our Team</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/team.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
 
         <div id="container">
 
+            <nav class="mobile-nav">
+                <div id="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="specials.html">Specials</a>
+                    <a href="training.html">Training</a>
+                    <a href="media.html">Media</a>
+                    <a href="faqs.html">FAQs</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div>
+                </a>
+            </nav>
+
             <!--Use the header area for website name or logo-->
-            <header>
+            <header id="afk-logo">
                 <a href="index.html"><img src="images/company-logo.png" alt="AFK Air Fryers logo"></a>
             </header>
 
             <!--Use the nav area to add hyperlinks to other pages within the website-->
-            <nav>
+            <nav class="tablet-desktop">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -34,7 +51,46 @@ C# : C0945827
 
             <!--Use the main area to add main content of the webpage-->
             <main>
-                
+
+                <div>
+
+                    <h2>Our Team</h2>
+                    <p>At AFK, we are a diverse group of passionate professionals dedicated to transforming the way people cook. Our team consists of creative minds from various fields who are united by a common goal: to provide healthier cooking solutions that make life easier. From our executive leadership team to our marketing and sales representatives, each member brings a unique set of skills and perspectives that contribute to our success.</p>
+
+                </div>
+
+                <div class="grid">
+
+                    <article>
+                        <h3>Leadership Team</h3>
+                        <img src="images/leadership.jpg" alt="Leadership team" class="round">
+                        <p>Under the guidance of our CEO <span class="leader">Emily Thompson</span>, our leadership team drives AFK towards continued innovation and success.</p>
+                        <p>Our leadership team drives the strategic vision of AFK, ensuring we remain at the forefront of innovation in the kitchen appliance industry. With decades of experience in technology, product development, and business growth, our executives lead by example, always keeping the customer at the center of our decision-making process.</p>
+                    </article>
+
+                    <article>
+                        <h3>Marketing Team</h3>
+                        <img src="images/marketing.jpg" alt="marketing team" class="round">
+                        <p>With Marketing Director <span class="leader">James Lee</span> leading the way, our marketing team positions AFK for growth and customer engagement.</p>
+                        <p>The marketing team at AFK crafts compelling stories and campaigns that connect with our customers. Their deep understanding of consumer needs and trends helps AFK stay relevant in a competitive market. They're the creative force behind our brand's voice, working tirelessly to create content that resonates with our diverse audience.</p>
+                    </article>
+
+                    <article>
+                        <h3>Sales Representatives</h3>
+                        <img src="images/sales.jpg" alt="sales team" class="round">
+                        <p>Guided by Sales Manager <span class="leader">Sarah Mitchell</span>, our sales team ensures every customer has an exceptional experience with AFK.</p>
+                        <p>Our sales team is the heart of our customer relationships. They are experts in understanding the needs of our customers and providing personalized solutions. With a strong commitment to customer service, they ensure that every person who interacts with AFK feels heard, valued, and supported.</p>
+                    </article>
+
+                    <aside class="tablet-desktop grid-item4">
+                        <h2>Our Story</h2>
+                        <p>Founded in 2011, AFK began with a simple yet ambitious idea: to make healthier cooking accessible to everyone. Starting as a small family-run business, we quickly realized that the demand for efficient, easy-to-use cooking technology was growing. This realization led to the development of our first product which would change the way people prepared their meals at home.</p>
+                        <p>From our humble beginnings, we've expanded our product line to include a wide variety of air fryers designed for every household, each built with cutting-edge technology that allows for healthier cooking. Our commitment to quality, innovation, and customer satisfaction has fueled our growth, making AFK a trusted name in kitchens across the globe.</p>
+                        <p>What began as a passion for better cooking has grown into a global company, constantly evolving to meet the needs of our customers. Today, we are proud to continue our mission to revolutionize home cooking with products that save time, reduce fat, and enhance flavor. We're excited about the future and what's to come as we continue to innovate and inspire.</p>
+                    </aside>
+
+                </div>
+
             </main>
 
             <!--Use the footer area to add webpage footer content-->
@@ -44,5 +100,8 @@ C# : C0945827
 
         </div>
 
+        <script src="scripts/script.js"></script>
+
     </body>
+
 </html>

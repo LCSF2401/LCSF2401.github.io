@@ -8,18 +8,35 @@ C# : C0945827
         <title>AFK: Template</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
 
         <div id="container">
 
+            <nav class="mobile-nav">
+                <div id="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="specials.html">Specials</a>
+                    <a href="training.html">Training</a>
+                    <a href="media.html">Media</a>
+                    <a href="faqs.html">FAQs</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div>
+                </a>
+            </nav>
+
             <!--Use the header area for website name or logo-->
-            <header>
+            <header id="afk-logo">
                 <a href="index.html"><img src="images/company-logo.png" alt="AFK Air Fryers logo"></a>
             </header>
 
             <!--Use the nav area to add hyperlinks to other pages within the website-->
-            <nav>
+            <nav class="tablet-desktop">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -44,5 +61,8 @@ C# : C0945827
 
         </div>
 
+        <script src="scripts/script.js"></script>
+
     </body>
+
 </html>

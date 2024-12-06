@@ -8,18 +8,35 @@ C# : C0945827
         <title>AFK: Specials</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
 
         <div id="container">
 
+            <nav class="mobile-nav">
+                <div id="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="specials.html">Specials</a>
+                    <a href="training.html">Training</a>
+                    <a href="media.html">Media</a>
+                    <a href="faqs.html">FAQs</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div>
+                </a>
+            </nav>
+
             <!--Use the header area for website name or logo-->
-            <header>
+            <header id="afk-logo">
                 <a href="index.html"><img src="images/company-logo.png" alt="AFK Air Fryers logo"></a>
             </header>
 
             <!--Use the nav area to add hyperlinks to other pages within the website-->
-            <nav>
+            <nav class="tablet-desktop">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -41,14 +58,102 @@ C# : C0945827
             
                 <div class="product-of-the-week">
                     <h2>Product of the Week: AFK Turbo Air Fryer</h2>
-                    <p>Experience healthier cooking with our Turbo Air Fryer! With rapid air technology, you can fry, bake, grill, and roast all your favorite foods with less oil.</p>
-                    <img src="images/turbo-air-fryer.jpg" alt="AFK Turbo Air Fryer">
+                    <p>Experience healthier cooking with our <span class="pow">Turbo Air Fryer!</span> With rapid air technology, you can fry, bake, grill, and roast all your favorite foods with less oil.</p>
+                    <div class="product-content">
+                        <img src="images/turbo-air-fryer.jpg" alt="AFK Turbo Air Fryer" class="product-image">
+                        <div class="product-specs">
+                            <h3>Specifications</h3>
+                            <ul>
+                                <li>Capacity: 5.8 Quarts</li>
+                                <li>Power: 1700W</li>
+                                <li>Temperature Range: 180°F - 400°F</li>
+                                <li>Cooking Functions: Fry, Bake, Grill, Roast</li>
+                                <li>Non-stick Basket</li>
+                                <li>Fast Heating Technology</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+
+                    <div class="product-card">
+                        <img class="product-card-image" src="images/fryer1.jpg" alt="">
+                        <p>AFK AirMaster</p>
+                        <p>$129.99</p>
+                        <p>4.5<span style="color:#7F8C8D;">
+                            &#x2605;
+                            </span></p>
+                    </div>
+            
+                    <div class="product-card">
+                        <img class="product-card-image" src="images/fryer2.jpg" alt="">
+                        <p>AFK CrispChef</p>
+                        <p>$149.99</p>
+                        <p>4.7<span style="color:#7F8C8D;">
+                            &#x2605;
+                            </span></p>
+                    </div>
+            
+                    <div class="product-card">
+                        <img class="product-card-image" src="images/fryer3.jpg" alt="">
+                        <p>AFK VitaFry</p>
+                        <p>$169.99</p>
+                        <p>4.1<span style="color:#7F8C8D;">
+                            &#x2605;
+                            </span></p>
+                    </div>
+            
+                    <div class="product-card">
+                        <img class="product-card-image" src="images/fryer4.jpg" alt="">
+                        <p>AFK AeroCook</p>
+                        <p>$199.99</p>
+                        <p>4.2<span style="color:#7F8C8D;">
+                            &#x2605;
+                            </span></p>
+                    </div>
+            
+                    <div class="product-card">
+                        <img class="product-card-image" src="images/fryer5.jpg" alt="">
+                        <p>AFK SizzleSmart</p>
+                        <p>$249.99</p>
+                        <p>4.4<span style="color:#7F8C8D;">
+                            &#x2605;
+                            </span></p>
+                    </div>
+            
+                    <div class="product-card">
+                        <img class="product-card-image" src="images/fryer6.jpg" alt="">
+                        <p>AFK FryFusion</p>
+                        <p>$299.99</p>
+                        <p>4.4<span style="color:#7F8C8D;">
+                            &#x2605;
+                            </span></p>
+                    </div>
+
+                    <div class="product-card">
+                        <img class="product-card-image" src="images/fryer7.jpg" alt="">
+                        <p>AFK CrispMaster</p>
+                        <p>$129.99</p>
+                        <p>4.5<span style="color:#7F8C8D;">
+                            &#x2605;
+                            </span></p>
+                    </div>
+
+                    <div class="product-card">
+                        <img class="product-card-image" src="images/fryer8.jpg" alt="">
+                        <p>AFK PureFry</p>
+                        <p>$139.99</p>
+                        <p>4.5<span style="color:#7F8C8D;">
+                            &#x2605;
+                            </span></p>
+                    </div>
+
                 </div>
             
                 <div class="guarantee">
                     <h2>Customer Satisfaction Guaranteed!</h2>
-                    <p>Your happiness is our priority! We guarantee that our air fryers will exceed your expectations. **Try it risk-free!**</p>
-                    <img src="images/guarantee-badge.png" alt="Customer Guarantee" height="300" width="300">
+                    <p>Your happiness is our priority! We guarantee that our air fryers will exceed your expectations.<img src="images/guarantee-badge.png" alt="Customer Guarantee" height="150" width="150">  <span class="try-it">Try it risk-free!</span></p>
                 </div>
             
                 <div class="reasons">
@@ -70,5 +175,8 @@ C# : C0945827
 
         </div>
 
+        <script src="scripts/script.js"></script>
+
     </body>
+
 </html>

@@ -5,21 +5,38 @@ C# : C0945827
 -->
 <html lang="en">
     <head>
-        <title>AFK: Home</title>
+        <title>AFK Air Fryers</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
 
         <div id="container">
 
+            <nav class="mobile-nav">
+                <div id="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="specials.html">Specials</a>
+                    <a href="training.html">Training</a>
+                    <a href="media.html">Media</a>
+                    <a href="faqs.html">FAQs</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div>
+                </a>
+            </nav>
+
             <!--Use the header area for website name or logo-->
-            <header>
+            <header id="afk-logo">
                 <a href="index.html"><img src="images/company-logo.png" alt="AFK Air Fryers logo"></a>
             </header>
 
             <!--Use the nav area to add hyperlinks to other pages within the website-->
-            <nav>
+            <nav class="tablet-desktop">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -46,7 +63,24 @@ C# : C0945827
 
                     <h4>Shop Now and Experience the AFK Difference!</h4>
 
-                    <img src="images/air-fryer.jpg" alt="modern air fryer with food">
+                </div>
+
+                <div class="grid">
+
+                    <figure class="frame">
+                        <a href="team.html"><img src="images/team.jpg" alt="our team"></a>
+                        <figcaption class="pic-text">Our Team</figcaption>
+                    </figure>
+
+                    <figure class="frame">
+                        <a href="specials.html"><img src="images/pow.jpg" alt="product of the week" class="product-image"></a>
+                        <figcaption class="pic-text">Product of the week</figcaption>
+                    </figure>
+
+                    <figure class="frame">
+                        <a href="contact.html"><img src="images/support.png" alt="support"></a>
+                        <figcaption class="pic-text">Give your feedback</figcaption>
+                    </figure>
 
                 </div>
 
@@ -59,5 +93,8 @@ C# : C0945827
 
         </div>
 
+        <script src="scripts/script.js"></script>
+
     </body>
+
 </html>

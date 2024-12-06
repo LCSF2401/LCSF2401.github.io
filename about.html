@@ -8,18 +8,35 @@ C# : C0945827
         <title>AFK: About</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
 
         <div id="container">
 
+            <nav class="mobile-nav">
+                <div id="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="specials.html">Specials</a>
+                    <a href="training.html">Training</a>
+                    <a href="media.html">Media</a>
+                    <a href="faqs.html">FAQs</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div>
+                </a>
+            </nav>
+
             <!--Use the header area for website name or logo-->
-            <header>
+            <header id="afk-logo">
                 <a href="index.html"><img src="images/company-logo.png" alt="AFK Air Fryers logo"></a>
             </header>
 
             <!--Use the nav area to add hyperlinks to other pages within the website-->
-            <nav>
+            <nav class="tablet-desktop">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -32,9 +49,52 @@ C# : C0945827
                 </ul>
             </nav>
 
+            <div id="about-image">
+                <img src="images/about-image.jpg" alt="about image" class="banner">
+            </div>
+
             <!--Use the main area to add main content of the webpage-->
             <main>
-                
+                <section id="about">
+                    <h2>About Us</h2>
+                    <p>
+                        Welcome to AFK, your ultimate destination for innovative, efficient, and stylish air fryers. 
+                        Our mission is to bring healthy and delicious cooking to every kitchen, making mealtime both 
+                        enjoyable and guilt-free.
+                    </p>
+                    <p>
+                        At AFK, we prioritize quality and functionality, designing products that not only perform 
+                        exceptionally but also elevate your cooking experience.
+                    </p>
+                </section>
+                <section id="story">
+                    <h2>Our Story</h2>
+                    <p>
+                        AFK started with a vision to revolutionize the way people cook at home. What began as a small 
+                        workshop in 2010 has now grown into a trusted household name, serving thousands of customers 
+                        worldwide. Our commitment to innovation, health, and sustainability continues to inspire our 
+                        journey every day.
+                    </p>
+                </section>
+                <section id="reasons">
+                    <h2>Six Reasons Why You Should Shop with Us</h2>
+                    <ol>
+                        <li>Top-notch quality and durability in every product.</li>
+                        <li>Innovative designs that fit your modern lifestyle.</li>
+                        <li>Affordable pricing without compromising on performance.</li>
+                        <li>Eco-friendly and energy-efficient air fryers.</li>
+                        <li>Excellent customer service that truly cares.</li>
+                        <li>A growing community of happy and loyal customers.</li>
+                    </ol>
+                </section>
+                <section id="guarantee">
+                    <h2>Our Guarantee</h2>
+                    <p>
+                        At AFK, your satisfaction is our priority. We stand behind the quality and performance of our products 
+                        with a hassle-free return policy and lifetime customer support. 
+                        <strong>We guarantee you'll love our air fryers, or your money back!</strong>
+                    </p>
+                </section>
             </main>
 
             <!--Use the footer area to add webpage footer content-->
@@ -44,5 +104,8 @@ C# : C0945827
 
         </div>
 
+        <script src="scripts/script.js"></script>
+
     </body>
+
 </html>
