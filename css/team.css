@@ -109,11 +109,6 @@ main {
     text-shadow: 5px 5px 8px #ccc;
 }
 
-figure img{
-    border: none;
-    padding: none;
-}
-
 .grid {
     display: flex;
     flex-direction: column;

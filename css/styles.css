@@ -111,7 +111,7 @@ main {
 
 figure img{
     border: none;
-    padding: none;
+    padding: 0;
 }
 
 .grid {
